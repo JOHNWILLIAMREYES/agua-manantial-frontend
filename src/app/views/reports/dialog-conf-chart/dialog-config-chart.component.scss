@@ -1,0 +1,111 @@
+.containerXD {
+    width: 400px;
+    height: 400px;
+    background-color: aqua;
+    justify-content: center;
+  }
+
+  .example-container mat-form-field + mat-form-field {
+    margin-left: 8px;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .mat-form {
+    width: 50%;
+  }
+.mat-datepicker-content .mat-calendar {
+  width: 296px;
+  height: 354px;
+  background-color: #c51515;
+}
+
+.mat-datepicker-header {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.mat-calendar {
+  font-size: 14px;
+}
+
+.mat-calendar-body-cell-content {
+  color: #333;
+}
+
+  
+  .form {
+    width: 600px;
+    height: 200px;
+  }
+  
+  .form-element {
+    width: 50%;
+    padding: 5px;
+  }
+  
+  button {
+    width: 40%;
+    margin-left: 30px;
+    margin-right: 20px;
+    margin-top: 20px;
+    background-color: dodgerblue;
+    justify-content: center;
+    color: white;
+    border-radius: 5px;
+  }
+  mat-form-field,
+  input {
+    margin-top: 20px;
+  }
+  .title {
+    font-size: 30px;
+    font-style: italic;
+    color: blue;
+  }
+  mat-label {
+    color: red;
+  }
+  .labeDetail {
+    justify-content: center;
+    color: blue;
+  }
+  
+.swal2-input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 16px;
+}
+ 
+.field-form-element {
+  
+  width: 50%;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 30px;
+}
+
+.field-title-element {
+  padding-top: 20px;
+  width: 50%;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 30px;
+}
+
+.row-form-container {
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}

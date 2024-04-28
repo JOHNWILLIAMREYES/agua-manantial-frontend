@@ -1,0 +1,20 @@
+.abs-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.form {
+  width: 450px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 3px #999;
+}
+.logo {
+  height: 100px;
+  width: 250px;
+  padding-right: 50px;
+}
+.navbar {
+  height: 110px;
+}

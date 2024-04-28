@@ -1,0 +1,43 @@
+<h2 mat-dialog-title class="title" align="center">Configurar Gráfico</h2>
+
+<form [formGroup]="formGroup" class="form">
+  
+  <div class="row-form-container">
+    <div appearance="fill" class="field-form-element">
+      <mat-label>Fecha Inicial</mat-label>
+      <input matInput type="date" id="swal-input1" class="swal2-input" formControlName="fechaInicial">
+      <mat-error *ngIf="formGroup.get('fechaInicial')?.hasError('required')">Fecha Inicial es obligatoria</mat-error>
+    </div>
+  
+    <div appearance="fill" class="field-form-element">
+      <mat-label>Fecha Final</mat-label>
+      <input matInput type="date" id="swal-input2" class="swal2-input" formControlName="fechaFinal">
+      <mat-error *ngIf="formGroup.get('fechaFinal')?.hasError('required')">Fecha Final es obligatoria</mat-error>
+    </div>
+  </div>
+  
+  <div appearance="fill" class="field-title-element">
+    <mat-label>Campos a mostrar eje X</mat-label>
+  </div>
+  <div class="row-form-container" style="padding-top: 5px;">
+    
+    <div appearance="fill" class="field-form-element">
+      <p><mat-checkbox id="fecha" formControlName="fecha" (change)="checkboxChanged('fecha')">Fecha Pedido</mat-checkbox></p>
+    </div>
+    <div appearance="fill" class="field-form-element">
+      <p><mat-checkbox id="pedido" formControlName="pedido" (change)="checkboxChanged('pedido')">Número Pedido</mat-checkbox></p>
+    </div>
+    <div appearance="fill" class="field-form-element">
+      <p><mat-checkbox id="cliente" formControlName="cliente" (change)="checkboxChanged('cliente')">Nombre Cliente</mat-checkbox></p>
+    </div>
+  </div>
+  
+  
+  <mat-dialog-actions align="center">
+    <button mat-button mat-dialog-close>Cerrar</button>
+    <button mat-raised-button mat-dialog-close (click)="createOrder()" [disabled]="! (formGroup.valid && checkBoxValid)">Aceptar</button>
+  </mat-dialog-actions>
+
+  
+</form>
+
